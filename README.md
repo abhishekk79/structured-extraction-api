@@ -24,8 +24,12 @@ endpoint.
    ```bash
    NVIDIA_API_KEY=your-nvidia-api-key
    NVIDIA_BASE_URL=https://integrate.api.nvidia.com/v1
-   NVIDIA_MODEL=deepseek-ai/deepseek-v4-flash-0731
+   NVIDIA_MODEL=nvidia/nemotron-3-ultra-550b-a55b
    ```
+
+   `deepseek-ai/deepseek-v4-flash-0731` was used originally but showed
+   multi-minute latency per call regardless of settings; `nemotron-3-ultra`
+   responds in a few seconds for the same extraction task.
 
 4. Verify the connection:
 
@@ -45,6 +49,9 @@ endpoint.
 | `test_connection.py` | Sanity-checks the API connection (Session 0). |
 | `session1_raw_call.py` | Asks the model to extract fields as plain text, no schema (Session 1). |
 | `session2_structured_extraction.py` | Uses `instructor` + `JobPosting` to get validated structured JSON (Session 2). |
+| `main.py` | FastAPI app exposing `POST /extract` (Session 3). |
+| `test_postings/` | Varied job postings (hourly pay, foreign currency, no salary, terse/verbose, etc.) used to stress-test extraction (Session 4). |
+| `session4_stress_test.py` | Runs every file in `test_postings/` through the extraction logic and writes results to `session4_results.json` (Session 4). |
 
 ## Running the scripts
 
@@ -56,14 +63,19 @@ python session1_raw_call.py
 python session2_structured_extraction.py
 ```
 
-Note: the model runs in a high-reasoning "thinking" mode and can take
-1-3+ minutes to respond — this is expected.
+To run the API server and stress test:
+
+```bash
+uvicorn main:app --reload
+python session4_stress_test.py
+```
 
 ## Roadmap
 
 - [x] Session 0: environment setup + API connectivity test
 - [x] Session 1: raw (unstructured) field extraction
 - [x] Session 2: structured extraction with Pydantic + instructor
-- [ ] Session 3: wrap extraction in a FastAPI `POST /extract` endpoint
-- [ ] Session 4-6: stress-test against 20-25 real job postings, fix issues
+- [x] Session 3: wrap extraction in a FastAPI `POST /extract` endpoint
+- [x] Session 4: stress-test against varied postings, fix salary period/currency ambiguity
+- [ ] Session 5-6: expand test coverage, fix any remaining issues
 - [ ] Session 7: deploy to Hugging Face Spaces
