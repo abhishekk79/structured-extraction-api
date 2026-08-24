@@ -1,15 +1,8 @@
-import os
-from dotenv import load_dotenv
-from openai import OpenAI
+from client import NVIDIA_MODEL, PROJECT_ROOT, get_raw_client
 
-load_dotenv()
+client = get_raw_client()
 
-client = OpenAI(
-    base_url=os.environ["NVIDIA_BASE_URL"],
-    api_key=os.environ["NVIDIA_API_KEY"],
-)
-
-with open("sample_job_posting.txt") as f:
+with open(PROJECT_ROOT / "sample_job_posting.txt") as f:
     job_posting = f.read()
 
 prompt = f"""Extract the following fields from this job posting as plain text
@@ -26,7 +19,7 @@ Job posting:
 """
 
 completion = client.chat.completions.create(
-    model=os.environ["NVIDIA_MODEL"],
+    model=NVIDIA_MODEL,
     messages=[{"role": "user", "content": prompt}],
     temperature=0,
     max_tokens=500,
