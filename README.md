@@ -77,5 +77,5 @@ python session4_stress_test.py
 - [x] Session 2: structured extraction with Pydantic + instructor
 - [x] Session 3: wrap extraction in a FastAPI `POST /extract` endpoint
 - [x] Session 4: stress-test against varied postings, fix salary period/currency ambiguity
-- [ ] Session 5-6: expand test coverage, fix any remaining issues
+- [x] Session 5-6: expand test coverage to 20 postings (multi-location, unpaid roles, bonus/OTE, non-English, garbage input), fix weekly/project pay periods
 - [ ] Session 7: deploy to Hugging Face Spaces
