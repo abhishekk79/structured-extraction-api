@@ -27,11 +27,21 @@ endpoint.
    NVIDIA_API_KEY=your-nvidia-api-key
    NVIDIA_BASE_URL=https://integrate.api.nvidia.com/v1
    NVIDIA_MODEL=nvidia/nemotron-3-ultra-550b-a55b
+   APP_API_KEY=choose-your-own-random-string
    ```
 
    `deepseek-ai/deepseek-v4-flash-0731` was used originally but showed
    multi-minute latency per call regardless of settings; `nemotron-3-ultra`
    responds in a few seconds for the same extraction task.
+
+   `APP_API_KEY` is this API's own access key, separate from the NVIDIA key.
+   Every request to `/extract` must include it via an `X-API-Key` header —
+   this is what stops the endpoint from being called by anyone once it's
+   deployed publicly. Generate one with:
+
+   ```bash
+   python -c "import secrets; print(secrets.token_urlsafe(32))"
+   ```
 
 4. Verify the connection:
 
@@ -100,6 +110,7 @@ python session4_stress_test.py
 ```bash
 curl -X POST http://127.0.0.1:8000/extract \
   -H "Content-Type: application/json" \
+  -H "X-API-Key: your-app-api-key" \
   -d '{"text": "Senior Backend Engineer, remote, $140k-175k/year, Python + FastAPI required"}'
 ```
 
