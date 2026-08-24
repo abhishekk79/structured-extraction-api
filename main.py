@@ -2,7 +2,7 @@ import instructor
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from client import NVIDIA_MODEL, get_raw_client
+from client import NO_THINKING, NVIDIA_MODEL, get_raw_client
 from models import JobPosting
 
 app = FastAPI(title="Structured Extraction API")
@@ -26,4 +26,5 @@ def extract(request: ExtractRequest) -> JobPosting:
         ],
         temperature=0,
         max_tokens=1500,
+        extra_body=NO_THINKING,
     )

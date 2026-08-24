@@ -1,0 +1,69 @@
+Senior Platform Engineer — Infrastructure & Reliability
+
+About Us
+Cascadia Freight is a logistics technology company operating across North
+America. We move freight data, not just freight. Our platform team keeps the
+lights on for every other engineering team at the company, and we take that
+responsibility seriously. We were founded in 2016, raised our Series C in
+2024, and now process over 40 million shipment events per day across our
+core systems.
+
+The Role
+We are looking for a Senior Platform Engineer to join our Infrastructure &
+Reliability group. You will be embedded in a team of 6 engineers responsible
+for the reliability, scalability, and security of our core platform, which
+underpins every product surface at Cascadia. This is a highly cross-
+functional role: you will partner closely with product engineering teams,
+security, and data platform to ensure our systems scale gracefully and fail
+safely.
+
+Responsibilities
+- Design, build, and operate infrastructure supporting 40M+ daily events
+- Own our Kubernetes platform, including cluster upgrades, autoscaling
+  policy, and multi-tenancy guardrails
+- Drive incident response and blameless postmortems
+- Improve observability across metrics, logs, and traces
+- Partner with security on hardening our container supply chain
+- Mentor mid-level and junior engineers on infrastructure best practices
+- Participate in an on-call rotation (1 week in 6)
+
+Required Qualifications
+- 6+ years of experience in infrastructure, SRE, or platform engineering
+- Deep hands-on experience with Kubernetes in production at scale
+- Strong knowledge of AWS (EKS, VPC, IAM, RDS, S3)
+- Proficiency with Terraform or another IaC tool
+- Experience with Prometheus, Grafana, and distributed tracing (OpenTelemetry
+  or similar)
+- Solid Go or Python skills for tooling and automation
+- Experience with CI/CD systems (we use GitHub Actions and ArgoCD)
+- Familiarity with Kafka or another event streaming platform
+- Comfortable with Docker, Helm, and service mesh concepts (we use Istio)
+- Excellent written communication for RFCs and postmortems
+
+Nice to Have
+- Experience with cost optimization at scale (FinOps)
+- Prior experience in logistics, e-commerce, or another high-throughput
+  domain
+- Contributions to open source infrastructure tooling
+- Security certifications (CKS, AWS Security Specialty)
+
+Location & Work Arrangement
+This role is based out of our Seattle, WA headquarters. We operate on a
+hybrid schedule: Tuesday through Thursday in office, with Monday and Friday
+flexible to work from home. Relocation assistance is available for the right
+candidate.
+
+Compensation & Benefits
+The salary range for this role is $165,000 to $205,000 per year, based on
+experience and interview performance. In addition to base salary, this role
+includes:
+- Meaningful equity grant
+- 100% covered health, dental, and vision insurance for employees
+- 401(k) with 4% match
+- $2,000 annual learning and development stipend
+- Unlimited PTO (with a 3-week minimum encouraged)
+- Fully paid parental leave
+
+Cascadia Freight is an equal opportunity employer and does not discriminate
+on the basis of race, religion, color, national origin, gender, sexual
+orientation, age, marital status, veteran status, or disability status.

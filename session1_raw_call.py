@@ -1,4 +1,4 @@
-from client import NVIDIA_MODEL, PROJECT_ROOT, get_raw_client
+from client import NO_THINKING, NVIDIA_MODEL, PROJECT_ROOT, get_raw_client
 
 client = get_raw_client()
 
@@ -23,6 +23,7 @@ completion = client.chat.completions.create(
     messages=[{"role": "user", "content": prompt}],
     temperature=0,
     max_tokens=500,
+    extra_body=NO_THINKING,
 )
 
 print(completion.choices[0].message.content)

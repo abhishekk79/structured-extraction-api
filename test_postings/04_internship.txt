@@ -1,0 +1,15 @@
+Summer Software Engineering Intern
+
+BrightPath Robotics is looking for a Summer 2027 Software Engineering Intern
+to join our perception team. This is an on-site role at our Pittsburgh, PA
+lab — no remote option for interns.
+
+You'll work alongside our robotics engineers on tooling for our camera
+calibration pipeline, written mostly in Python with some C++.
+
+Who we're looking for:
+- Currently pursuing a BS or MS in Computer Science, Robotics, or related field
+- Coursework or projects involving computer vision or robotics a plus
+- No professional experience required
+
+This is a paid internship: $32/hour, 40 hours/week, 12-week duration.

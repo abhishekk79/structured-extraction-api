@@ -1,0 +1,16 @@
+Lead Backend Engineer — Async-First, Work From Anywhere
+
+Fernweg is a fully distributed, async-first company (no HQ, no fixed hours,
+no location requirement). We're hiring a Lead Backend Engineer to help scale
+our booking platform.
+
+We communicate almost entirely in writing, run a 4-day work week, and expect
+strong ownership rather than close oversight.
+
+Requirements:
+- 7+ years building backend systems, with 2+ years in a tech lead capacity
+- Strong Ruby or Elixir background (we run both)
+- Comfortable working async across time zones with minimal live meetings
+
+Salary: $170,000 USD/year, flat, no negotiation. Fully remote, work from
+wherever you like.

@@ -1,0 +1,237 @@
+[
+  {
+    "file": "01_hourly_contract.txt",
+    "ok": true,
+    "seconds": 5.9,
+    "result": {
+      "title": "Frontend Developer (Contract, Part-Time)",
+      "seniority": "Mid",
+      "skills": [
+        "React",
+        "TypeScript",
+        "CSS",
+        "Tailwind",
+        "Accessibility"
+      ],
+      "location": "Austin, TX",
+      "remote": false,
+      "salary_min": 45,
+      "salary_max": 60,
+      "salary_period": "hourly",
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "02_no_salary.txt",
+    "ok": true,
+    "seconds": 2.3,
+    "result": {
+      "title": "Product Designer",
+      "seniority": "Mid",
+      "skills": [
+        "Product Design",
+        "User Research",
+        "High-fidelity Mockups",
+        "Figma",
+        "Figma-to-code",
+        "Front-end Implementation",
+        "Healthcare",
+        "B2B SaaS",
+        "Design Systems",
+        "Cross-functional Collaboration"
+      ],
+      "location": "US",
+      "remote": true,
+      "salary_min": null,
+      "salary_max": null,
+      "salary_period": null,
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "03_staff_eu_currency.txt",
+    "ok": true,
+    "seconds": 63.1,
+    "result": {
+      "title": "Staff Machine Learning Engineer",
+      "seniority": "Staff",
+      "skills": [
+        "PyTorch",
+        "Ray",
+        "time-series forecasting",
+        "feature store"
+      ],
+      "location": "Remote within the EU, or hybrid from our Berlin office",
+      "remote": true,
+      "salary_min": 95000,
+      "salary_max": 120000,
+      "salary_period": "annual",
+      "currency": "EUR"
+    }
+  },
+  {
+    "file": "04_internship.txt",
+    "ok": true,
+    "seconds": 1.1,
+    "result": {
+      "title": "Summer Software Engineering Intern",
+      "seniority": "Junior",
+      "skills": [
+        "Python",
+        "C++",
+        "Computer Vision",
+        "Robotics",
+        "Camera Calibration"
+      ],
+      "location": "Pittsburgh, PA",
+      "remote": false,
+      "salary_min": 32,
+      "salary_max": 32,
+      "salary_period": "hourly",
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "05_terse.txt",
+    "ok": true,
+    "seconds": 44.8,
+    "result": {
+      "title": "Backend Developer",
+      "seniority": "Mid",
+      "skills": [
+        "Python",
+        "Postgres"
+      ],
+      "location": "NYC",
+      "remote": false,
+      "salary_min": 150000,
+      "salary_max": 150000,
+      "salary_period": "annual",
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "06_verbose_long.txt",
+    "ok": true,
+    "seconds": 12.7,
+    "result": {
+      "title": "Senior Platform Engineer \u2014 Infrastructure & Reliability",
+      "seniority": "Senior",
+      "skills": [
+        "Kubernetes",
+        "AWS",
+        "EKS",
+        "VPC",
+        "IAM",
+        "RDS",
+        "S3",
+        "Terraform",
+        "Prometheus",
+        "Grafana",
+        "OpenTelemetry",
+        "Go",
+        "Python",
+        "GitHub Actions",
+        "ArgoCD",
+        "Kafka"
+      ],
+      "location": "Seattle, WA",
+      "remote": false,
+      "salary_min": 165000,
+      "salary_max": 205000,
+      "salary_period": "annual",
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "07_india_location.txt",
+    "ok": true,
+    "seconds": 23.9,
+    "result": {
+      "title": "Data Analyst",
+      "seniority": "Junior",
+      "skills": [
+        "SQL",
+        "Looker",
+        "Snowflake",
+        "Python",
+        "pandas"
+      ],
+      "location": "Bangalore (HSR Layout)",
+      "remote": true,
+      "salary_min": 1200000,
+      "salary_max": 1600000,
+      "salary_period": "annual",
+      "currency": "INR"
+    }
+  },
+  {
+    "file": "08_no_location_async.txt",
+    "ok": true,
+    "seconds": 2.1,
+    "result": {
+      "title": "Lead Backend Engineer",
+      "seniority": "Lead",
+      "skills": [
+        "Ruby",
+        "Elixir",
+        "Backend Systems",
+        "Tech Lead"
+      ],
+      "location": "Anywhere",
+      "remote": true,
+      "salary_min": 170000,
+      "salary_max": 170000,
+      "salary_period": "annual",
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "09_ambiguous_remote.txt",
+    "ok": true,
+    "seconds": 5.9,
+    "result": {
+      "title": "Solutions Architect",
+      "seniority": "Senior",
+      "skills": [
+        "REST APIs",
+        "webhooks",
+        "SSO integrations",
+        "SAML",
+        "OIDC",
+        "pre-sales",
+        "solutions architecture",
+        "client-facing communication"
+      ],
+      "location": "Chicago, IL",
+      "remote": true,
+      "salary_min": 130000,
+      "salary_max": 150000,
+      "salary_period": "annual",
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "10_non_tech_role.txt",
+    "ok": true,
+    "seconds": 6.2,
+    "result": {
+      "title": "Marketing Coordinator",
+      "seniority": "Junior",
+      "skills": [
+        "Canva",
+        "Instagram",
+        "Email Marketing",
+        "Social Media Management",
+        "Event Coordination",
+        "Vendor Management"
+      ],
+      "location": "Denver, CO",
+      "remote": false,
+      "salary_min": 48000,
+      "salary_max": 54000,
+      "salary_period": "annual",
+      "currency": "USD"
+    }
+  }
+]

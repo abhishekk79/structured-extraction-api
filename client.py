@@ -9,6 +9,11 @@ load_dotenv()
 PROJECT_ROOT = Path(__file__).parent
 NVIDIA_MODEL = os.environ["NVIDIA_MODEL"]
 
+# Disables the model's extended reasoning/"thinking" mode. NVIDIA NIM's exact
+# parameter name for this isn't consistently documented across their reasoning
+# models, so both known variants are set.
+NO_THINKING = {"chat_template_kwargs": {"thinking": False, "enable_thinking": False}}
+
 
 def get_raw_client() -> OpenAI:
     """OpenAI-compatible client pointed at the NVIDIA integrate endpoint."""

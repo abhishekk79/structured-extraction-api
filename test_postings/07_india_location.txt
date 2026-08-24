@@ -1,0 +1,16 @@
+Data Analyst — Bangalore (Hybrid)
+
+Suvidha Fintech is hiring a Data Analyst for our risk analytics team, based
+in our Bangalore office (HSR Layout). Hybrid: 3 days in office, 2 remote.
+
+Responsibilities:
+- Build and maintain dashboards in Looker for the credit risk team
+- Write SQL queries against our data warehouse (Snowflake)
+- Partner with the risk team to define new fraud metrics
+
+Requirements:
+- 1-3 years of experience in a data analyst role
+- Strong SQL skills
+- Familiarity with Python (pandas) is a plus but not required
+
+CTC: INR 12,00,000 - 16,00,000 per annum, based on experience.

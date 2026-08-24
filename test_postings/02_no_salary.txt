@@ -1,0 +1,17 @@
+Product Designer
+
+Meridian Health is hiring a Product Designer to join our clinical tools team.
+Fully remote, US timezones preferred.
+
+You'll own the design of internal dashboards used by nurses and care
+coordinators. We're a small design team (2 people) so you'll do everything
+from user research to high-fidelity mockups to light front-end implementation
+in Figma-to-code workflows.
+
+Must-haves:
+- 4+ years of product design experience, ideally in healthcare or B2B SaaS
+- Portfolio showing end-to-end design process
+- Experience working directly with engineers, not just handing off specs
+
+We don't publish salary ranges publicly but are happy to discuss compensation
+early in the process. Full benefits, unlimited PTO, equity.

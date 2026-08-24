@@ -1,6 +1,6 @@
 import instructor
 
-from client import NVIDIA_MODEL, PROJECT_ROOT, get_raw_client
+from client import NO_THINKING, NVIDIA_MODEL, PROJECT_ROOT, get_raw_client
 from models import JobPosting
 
 client = instructor.from_openai(get_raw_client())
@@ -19,6 +19,7 @@ result: JobPosting = client.chat.completions.create(
     ],
     temperature=0,
     max_tokens=1500,
+    extra_body=NO_THINKING,
 )
 
 print(result.model_dump_json(indent=2))

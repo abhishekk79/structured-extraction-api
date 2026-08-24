@@ -1,0 +1,17 @@
+Solutions Architect
+
+Vantage Systems is hiring a Solutions Architect to work with our enterprise
+customers on integration projects.
+
+Work arrangement: this role is primarily remote, but you should expect to
+travel to customer sites and our Chicago HQ roughly once a month, sometimes
+more during major rollouts.
+
+Requirements:
+- 5+ years in a pre-sales or solutions architecture role
+- Experience with REST APIs, webhooks, and SSO integrations (SAML/OIDC)
+- Strong client-facing communication skills
+- Willingness to travel up to 25%
+
+Compensation: $130,000 - $150,000 base, plus a variable bonus tied to
+customer implementation success.

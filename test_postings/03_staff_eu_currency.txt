@@ -1,0 +1,19 @@
+Staff Machine Learning Engineer
+
+Nordwind AI is a Berlin-based startup building forecasting models for the
+energy grid. We're hiring a Staff ML Engineer to lead our modeling
+architecture as we scale from prototype to production.
+
+Location: Remote within the EU, or hybrid from our Berlin office.
+
+Responsibilities:
+- Own the technical roadmap for our forecasting model suite
+- Mentor two mid-level ML engineers
+- Work with PyTorch, Ray, and our internal feature store
+
+Requirements:
+- 8+ years in applied ML, with at least 2 in a staff/principal-track role
+- Deep experience with time-series forecasting
+- Fluent English; German is a plus but not required
+
+Compensation: EUR 95,000 - 120,000 per year, plus a meaningful equity grant.

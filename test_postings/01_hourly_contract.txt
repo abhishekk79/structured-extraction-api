@@ -1,0 +1,16 @@
+Frontend Developer (Contract, Part-Time)
+
+WidgetWorks is looking for a contract frontend developer to help modernize our
+customer portal. This is a hybrid role: 2 days/week in our Austin, TX office.
+
+What you'll do:
+- Build UI components in React and TypeScript
+- Fix accessibility issues flagged in our recent audit
+- Pair with our one full-time frontend engineer
+
+Requirements:
+- 2+ years with React
+- Comfortable with CSS/Tailwind
+- Available 20 hours/week for a 3-month contract
+
+Pay: $45-60/hour, depending on experience. No benefits (contract role).

@@ -1,4 +1,4 @@
-from client import NVIDIA_MODEL, get_raw_client
+from client import NO_THINKING, NVIDIA_MODEL, get_raw_client
 
 client = get_raw_client()
 
@@ -7,6 +7,7 @@ completion = client.chat.completions.create(
     messages=[{"role": "user", "content": "Reply with exactly: connection ok"}],
     temperature=0,
     max_tokens=20,
+    extra_body=NO_THINKING,
 )
 
 print(completion.choices[0].message.content)
