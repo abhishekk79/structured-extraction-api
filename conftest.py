@@ -7,3 +7,4 @@ import os
 os.environ.setdefault("NVIDIA_API_KEY", "test-api-key")
 os.environ.setdefault("NVIDIA_BASE_URL", "https://example.invalid/v1")
 os.environ.setdefault("NVIDIA_MODEL", "test-model")
+os.environ.setdefault("APP_API_KEY", "test-app-api-key")

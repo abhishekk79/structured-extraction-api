@@ -12,9 +12,11 @@ class Settings(BaseSettings):
     nvidia_api_key: str
     nvidia_base_url: str
     nvidia_model: str
+    app_api_key: str
 
 
 NVIDIA_MODEL = Settings().nvidia_model
+APP_API_KEY = Settings().app_api_key
 
 # Disables the model's extended reasoning/"thinking" mode. NVIDIA NIM's exact
 # parameter name for this isn't consistently documented across their reasoning
