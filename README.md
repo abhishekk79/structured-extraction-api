@@ -72,6 +72,12 @@ tests mock the LLM call directly, so it runs in about a second with no
 API key required. `test_connection.py` and `session1-4` scripts are separate,
 manual scripts (they hit the real API) and aren't part of the pytest suite.
 
+Lint with [ruff](https://docs.astral.sh/ruff/) (also run in CI):
+
+```bash
+ruff check .
+```
+
 ## Running the scripts
 
 Each script can be run directly; they all read `sample_job_posting.txt` from
@@ -88,6 +94,32 @@ To run the API server and stress test:
 uvicorn main:app --reload
 python session4_stress_test.py
 ```
+
+## Example usage
+
+```bash
+curl -X POST http://127.0.0.1:8000/extract \
+  -H "Content-Type: application/json" \
+  -d '{"text": "Senior Backend Engineer, remote, $140k-175k/year, Python + FastAPI required"}'
+```
+
+```json
+{
+  "title": "Senior Backend Engineer",
+  "seniority": "Senior",
+  "skills": ["Python", "FastAPI"],
+  "location": "remote",
+  "remote": true,
+  "salary_min": 140000,
+  "salary_max": 175000,
+  "salary_period": "annual",
+  "currency": "USD"
+}
+```
+
+An empty or missing `text` field returns `422 Unprocessable Entity`; a failure
+in the upstream model call returns `502 Bad Gateway`. Interactive API docs
+(Swagger UI) are available at `/docs` while the server is running.
 
 ## Roadmap
 

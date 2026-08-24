@@ -36,14 +36,16 @@ def test_extract_requires_text_field():
     assert response.status_code == 422
 
 
-def test_extract_returns_500_when_upstream_call_fails():
-    # raise_server_exceptions=False mirrors real deployed behavior: uvicorn
-    # never re-raises an app exception to the caller, it returns a 500.
-    lenient_client = TestClient(app, raise_server_exceptions=False)
+def test_extract_rejects_empty_text():
+    response = client.post("/extract", json={"text": ""})
+    assert response.status_code == 422
 
+
+def test_extract_returns_502_when_upstream_call_fails():
     with patch(
         "main.client.chat.completions.create", side_effect=RuntimeError("upstream failure")
     ):
-        response = lenient_client.post("/extract", json={"text": "some posting"})
+        response = client.post("/extract", json={"text": "some posting"})
 
-    assert response.status_code == 500
+    assert response.status_code == 502
+    assert "detail" in response.json()

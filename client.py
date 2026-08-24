@@ -1,13 +1,20 @@
-import os
 from pathlib import Path
 
-from dotenv import load_dotenv
 from openai import OpenAI
-
-load_dotenv()
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 PROJECT_ROOT = Path(__file__).parent
-NVIDIA_MODEL = os.environ["NVIDIA_MODEL"]
+
+
+class Settings(BaseSettings):
+    model_config = SettingsConfigDict(env_file=PROJECT_ROOT / ".env", extra="ignore")
+
+    nvidia_api_key: str
+    nvidia_base_url: str
+    nvidia_model: str
+
+
+NVIDIA_MODEL = Settings().nvidia_model
 
 # Disables the model's extended reasoning/"thinking" mode. NVIDIA NIM's exact
 # parameter name for this isn't consistently documented across their reasoning
@@ -17,7 +24,5 @@ NO_THINKING = {"chat_template_kwargs": {"thinking": False, "enable_thinking": Fa
 
 def get_raw_client() -> OpenAI:
     """OpenAI-compatible client pointed at the NVIDIA integrate endpoint."""
-    return OpenAI(
-        base_url=os.environ["NVIDIA_BASE_URL"],
-        api_key=os.environ["NVIDIA_API_KEY"],
-    )
+    settings = Settings()
+    return OpenAI(base_url=settings.nvidia_base_url, api_key=settings.nvidia_api_key)
