@@ -1,0 +1,17 @@
+Desarrollador/a Backend Senior
+
+En Estrella Fintech buscamos un/a Desarrollador/a Backend Senior para unirse
+a nuestro equipo de pagos. El puesto es híbrido, con sede en Madrid
+(2 días presenciales por semana).
+
+Responsabilidades:
+- Diseñar y mantener APIs REST para nuestra plataforma de pagos
+- Trabajar con Python, Django y PostgreSQL
+- Colaborar con el equipo de producto en nuevas funcionalidades
+
+Requisitos:
+- 5+ años de experiencia en desarrollo backend
+- Experiencia sólida con Python y bases de datos relacionales
+- Nivel de inglés intermedio para colaborar con equipos internacionales
+
+Salario: 55.000 € - 68.000 € brutos anuales, según experiencia.

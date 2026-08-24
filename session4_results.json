@@ -2,7 +2,7 @@
   {
     "file": "01_hourly_contract.txt",
     "ok": true,
-    "seconds": 5.9,
+    "seconds": 1.5,
     "result": {
       "title": "Frontend Developer (Contract, Part-Time)",
       "seniority": "Mid",
@@ -24,34 +24,34 @@
   {
     "file": "02_no_salary.txt",
     "ok": true,
-    "seconds": 2.3,
+    "seconds": 2.1,
     "result": {
       "title": "Product Designer",
       "seniority": "Mid",
       "skills": [
         "Product Design",
         "User Research",
-        "High-fidelity Mockups",
+        "High-Fidelity Mockups",
         "Figma",
-        "Figma-to-code",
-        "Front-end Implementation",
+        "Figma-to-Code",
+        "Front-End Implementation",
         "Healthcare",
         "B2B SaaS",
         "Design Systems",
-        "Cross-functional Collaboration"
+        "Cross-Functional Collaboration"
       ],
       "location": "US",
       "remote": true,
       "salary_min": null,
       "salary_max": null,
       "salary_period": null,
-      "currency": "USD"
+      "currency": null
     }
   },
   {
     "file": "03_staff_eu_currency.txt",
     "ok": true,
-    "seconds": 63.1,
+    "seconds": 3.3,
     "result": {
       "title": "Staff Machine Learning Engineer",
       "seniority": "Staff",
@@ -59,7 +59,8 @@
         "PyTorch",
         "Ray",
         "time-series forecasting",
-        "feature store"
+        "feature store",
+        "applied ML"
       ],
       "location": "Remote within the EU, or hybrid from our Berlin office",
       "remote": true,
@@ -72,7 +73,7 @@
   {
     "file": "04_internship.txt",
     "ok": true,
-    "seconds": 1.1,
+    "seconds": 19.2,
     "result": {
       "title": "Summer Software Engineering Intern",
       "seniority": "Junior",
@@ -80,8 +81,7 @@
         "Python",
         "C++",
         "Computer Vision",
-        "Robotics",
-        "Camera Calibration"
+        "Robotics"
       ],
       "location": "Pittsburgh, PA",
       "remote": false,
@@ -94,7 +94,7 @@
   {
     "file": "05_terse.txt",
     "ok": true,
-    "seconds": 44.8,
+    "seconds": 1.5,
     "result": {
       "title": "Backend Developer",
       "seniority": "Mid",
@@ -113,7 +113,7 @@
   {
     "file": "06_verbose_long.txt",
     "ok": true,
-    "seconds": 12.7,
+    "seconds": 21.4,
     "result": {
       "title": "Senior Platform Engineer \u2014 Infrastructure & Reliability",
       "seniority": "Senior",
@@ -146,7 +146,7 @@
   {
     "file": "07_india_location.txt",
     "ok": true,
-    "seconds": 23.9,
+    "seconds": 3.0,
     "result": {
       "title": "Data Analyst",
       "seniority": "Junior",
@@ -168,7 +168,7 @@
   {
     "file": "08_no_location_async.txt",
     "ok": true,
-    "seconds": 2.1,
+    "seconds": 2.9,
     "result": {
       "title": "Lead Backend Engineer",
       "seniority": "Lead",
@@ -189,7 +189,7 @@
   {
     "file": "09_ambiguous_remote.txt",
     "ok": true,
-    "seconds": 5.9,
+    "seconds": 3.5,
     "result": {
       "title": "Solutions Architect",
       "seniority": "Senior",
@@ -214,7 +214,7 @@
   {
     "file": "10_non_tech_role.txt",
     "ok": true,
-    "seconds": 6.2,
+    "seconds": 2.3,
     "result": {
       "title": "Marketing Coordinator",
       "seniority": "Junior",
@@ -232,6 +232,232 @@
       "salary_max": 54000,
       "salary_period": "annual",
       "currency": "USD"
+    }
+  },
+  {
+    "file": "11_weekly_pay.txt",
+    "ok": true,
+    "seconds": 11.6,
+    "result": {
+      "title": "Freelance Copywriter",
+      "seniority": "Mid",
+      "skills": [
+        "Copywriting",
+        "Content Writing",
+        "Blog Writing",
+        "Email Marketing",
+        "Landing Page Copy",
+        "Fintech",
+        "Health-tech",
+        "Client Voice Management"
+      ],
+      "location": "Fully remote",
+      "remote": true,
+      "salary_min": 2000,
+      "salary_max": 2000,
+      "salary_period": "weekly",
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "12_multi_location.txt",
+    "ok": true,
+    "seconds": 1.6,
+    "result": {
+      "title": "Customer Success Manager",
+      "seniority": "Mid",
+      "skills": [
+        "Customer Success",
+        "Account Management",
+        "CRM",
+        "HubSpot",
+        "Quarterly Business Reviews",
+        "Renewals",
+        "Expansion",
+        "Stakeholder Management",
+        "Presentation Skills"
+      ],
+      "location": "New York, NY; Austin, TX; Denver, CO; Remote (US)",
+      "remote": true,
+      "salary_min": 85000,
+      "salary_max": 100000,
+      "salary_period": "annual",
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "13_unpaid_volunteer.txt",
+    "ok": true,
+    "seconds": 9.7,
+    "result": {
+      "title": "Volunteer Grant Writer",
+      "seniority": "Volunteer",
+      "skills": [
+        "Grant writing",
+        "Persuasive writing",
+        "Research",
+        "Proposal development"
+      ],
+      "location": "Remote",
+      "remote": true,
+      "salary_min": null,
+      "salary_max": null,
+      "salary_period": null,
+      "currency": null
+    }
+  },
+  {
+    "file": "14_salary_plus_bonus.txt",
+    "ok": true,
+    "seconds": 3.8,
+    "result": {
+      "title": "Enterprise Account Executive",
+      "seniority": "Senior",
+      "skills": [
+        "Enterprise SaaS Sales",
+        "Security Sales",
+        "Full Sales Cycle Management",
+        "Prospecting",
+        "Technical Evaluations",
+        "Quota Attainment",
+        "Large Deal Closing ($100K+ ACV)"
+      ],
+      "location": "US-based",
+      "remote": true,
+      "salary_min": 110000,
+      "salary_max": 110000,
+      "salary_period": "annual",
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "15_executive_role.txt",
+    "ok": true,
+    "seconds": 10.0,
+    "result": {
+      "title": "Vice President of Engineering",
+      "seniority": "VP",
+      "skills": [
+        "Engineering leadership",
+        "Team scaling",
+        "Hypergrowth management",
+        "Biotech/health tech experience",
+        "Regulated industry experience",
+        "Engineering culture building",
+        "Executive leadership",
+        "Technical strategy"
+      ],
+      "location": "San Diego, CA",
+      "remote": false,
+      "salary_min": 260000,
+      "salary_max": 310000,
+      "salary_period": "annual",
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "16_gbp_symbol_only.txt",
+    "ok": true,
+    "seconds": 1.7,
+    "result": {
+      "title": "DevOps Engineer",
+      "seniority": "Mid",
+      "skills": [
+        "AWS",
+        "Terraform",
+        "GitLab CI",
+        "CI/CD",
+        "SRE"
+      ],
+      "location": "London",
+      "remote": false,
+      "salary_min": 55000,
+      "salary_max": 65000,
+      "salary_period": "annual",
+      "currency": "GBP"
+    }
+  },
+  {
+    "file": "17_project_based_pay.txt",
+    "ok": true,
+    "seconds": 4.2,
+    "result": {
+      "title": "Freelance Illustrator \u2014 Single Project",
+      "seniority": "Mid",
+      "skills": [
+        "character design",
+        "concept art",
+        "line art",
+        "digital illustration",
+        "stylized art",
+        "fantasy art"
+      ],
+      "location": "Remote",
+      "remote": true,
+      "salary_min": 6000,
+      "salary_max": 6000,
+      "salary_period": "project",
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "18_emoji_marketing_title.txt",
+    "ok": true,
+    "seconds": 1.5,
+    "result": {
+      "title": "Full-Stack Engineer",
+      "seniority": "Mid",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "location": "Miami, FL",
+      "remote": true,
+      "salary_min": 120000,
+      "salary_max": 140000,
+      "salary_period": "annual",
+      "currency": "USD"
+    }
+  },
+  {
+    "file": "19_non_english_spanish.txt",
+    "ok": true,
+    "seconds": 2.8,
+    "result": {
+      "title": "Desarrollador/a Backend Senior",
+      "seniority": "Senior",
+      "skills": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "REST APIs",
+        "Backend Development"
+      ],
+      "location": "Madrid",
+      "remote": false,
+      "salary_min": 55000,
+      "salary_max": 68000,
+      "salary_period": "annual",
+      "currency": "EUR"
+    }
+  },
+  {
+    "file": "20_garbage_input.txt",
+    "ok": true,
+    "seconds": 1.5,
+    "result": {
+      "title": "Unknown",
+      "seniority": "Unknown",
+      "skills": [],
+      "location": "Unknown",
+      "remote": false,
+      "salary_min": null,
+      "salary_max": null,
+      "salary_period": null,
+      "currency": null
     }
   }
 ]

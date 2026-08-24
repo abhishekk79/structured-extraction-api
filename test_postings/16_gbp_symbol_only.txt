@@ -1,0 +1,14 @@
+DevOps Engineer
+
+Foxglove Systems is hiring a DevOps Engineer for our London office
+(hybrid, 2 days/week in office).
+
+You'll manage our CI/CD pipelines, our AWS infrastructure, and help drive
+down our deployment lead time.
+
+Requirements:
+- 4+ years in a DevOps or SRE role
+- Strong AWS and Terraform experience
+- Experience with GitLab CI or similar
+
+Salary: £55,000 - £65,000, depending on experience.

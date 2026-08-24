@@ -13,14 +13,16 @@ class JobPosting(BaseModel):
     location: str = Field(description="The stated location or region for the role")
     remote: bool = Field(description="True if the role is remote, false otherwise")
     salary_min: Optional[int] = Field(
-        default=None, description="Minimum salary figure, in the pay period given by salary_period, if a salary is stated"
+        default=None,
+        description="Minimum base salary figure, in the pay period given by salary_period, if a salary is stated. Base salary only — exclude bonuses, commission, signing bonuses, or OTE (on-target earnings) figures.",
     )
     salary_max: Optional[int] = Field(
-        default=None, description="Maximum salary figure, in the pay period given by salary_period, if a salary is stated"
-    )
-    salary_period: Optional[Literal["hourly", "annual"]] = Field(
         default=None,
-        description="The pay period the salary figures are stated in, if a salary is given. Use 'hourly' for rates like '$45/hour', 'annual' for yearly salaries.",
+        description="Maximum base salary figure, in the pay period given by salary_period, if a salary is stated. Base salary only — exclude bonuses, commission, signing bonuses, or OTE (on-target earnings) figures.",
+    )
+    salary_period: Optional[Literal["hourly", "weekly", "project", "annual"]] = Field(
+        default=None,
+        description="The pay period the salary figures are stated in, if a salary is given. 'hourly' for rates like '$45/hour', 'weekly' for rates like '$2,000/week', 'project' for a flat one-time project fee, 'annual' for yearly salaries.",
     )
     currency: Optional[str] = Field(
         default=None,
