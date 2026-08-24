@@ -52,6 +52,23 @@ endpoint.
 | `main.py` | FastAPI app exposing `POST /extract` (Session 3). |
 | `test_postings/` | Varied job postings (hourly pay, foreign currency, no salary, terse/verbose, etc.) used to stress-test extraction (Session 4). |
 | `session4_stress_test.py` | Runs every file in `test_postings/` through the extraction logic and writes results to `session4_results.json` (Session 4). |
+| `tests/` | Automated pytest suite for `models.py`, `client.py`, and `main.py`. Mocks every LLM call — no API key or network access needed. |
+
+## Running the tests
+
+Install dev dependencies (adds `pytest` and test-only extras on top of
+`requirements.txt`), then run:
+
+```bash
+pip install -r requirements-dev.txt
+pytest
+```
+
+The suite never calls the real NVIDIA API — `conftest.py` sets fake
+credentials before any project module is imported, and the FastAPI endpoint
+tests mock the LLM call directly, so it runs in about a second with no
+API key required. `test_connection.py` and `session1-4` scripts are separate,
+manual scripts (they hit the real API) and aren't part of the pytest suite.
 
 ## Running the scripts
 
