@@ -62,6 +62,7 @@ endpoint.
 | `session1_raw_call.py` | Asks the model to extract fields as plain text, no schema (Session 1). |
 | `session2_structured_extraction.py` | Uses `instructor` + `JobPosting` to get validated structured JSON (Session 2). |
 | `main.py` | FastAPI app exposing `POST /extract` (Session 3). |
+| `app.py` | Gradio demo UI (paste a posting, get structured JSON back) for HF Spaces / interactive testing. |
 | `test_postings/` | Varied job postings (hourly pay, foreign currency, no salary, terse/verbose, etc.) used to stress-test extraction (Session 4). |
 | `session4_stress_test.py` | Runs every file in `test_postings/` through the extraction logic and writes results to `session4_results.json` (Session 4). |
 | `tests/` | Automated pytest suite for `models.py`, `client.py`, and `main.py`. Mocks every LLM call — no API key or network access needed. |
@@ -131,6 +132,22 @@ curl -X POST http://127.0.0.1:8000/extract \
 An empty or missing `text` field returns `422 Unprocessable Entity`; a failure
 in the upstream model call returns `502 Bad Gateway`. Interactive API docs
 (Swagger UI) are available at `/docs` while the server is running.
+
+## Demo UI
+
+A no-setup Gradio demo (`app.py`) wraps the extraction logic directly, so
+visitors can try it without curl, an API key, or knowing about the auth
+header on `/extract`:
+
+```bash
+python app.py
+```
+
+Opens at `http://127.0.0.1:7860`. It shares a small free-tier rate limit
+(5 requests / 10 min per visitor) using the server's own NVIDIA key; an
+"Advanced" section lets a visitor paste their own NVIDIA API key instead, to
+bypass that limit and run extractions on their own account. This is the
+intended entry point for the Hugging Face Spaces deployment (Session 7).
 
 ## Roadmap
 
