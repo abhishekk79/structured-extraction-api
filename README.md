@@ -1,5 +1,7 @@
 # Structured Extraction API
 
+[![CI](https://github.com/abhishekk79/structured-extraction-api/actions/workflows/ci.yml/badge.svg)](https://github.com/abhishekk79/structured-extraction-api/actions/workflows/ci.yml)
+
 A small project that extracts structured data (job title, seniority, skills,
 location, remote status, salary range) from free-text job postings using an
 LLM, and validates the result against a [Pydantic](https://docs.pydantic.dev/)
