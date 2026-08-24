@@ -1,0 +1,25 @@
+Senior Backend Engineer - Remote (US)
+
+Acme Analytics is hiring a Senior Backend Engineer to join our data platform team.
+
+Location: Remote, must be based in the United States
+Employment type: Full-time
+
+About the role:
+You'll design and build APIs that power our real-time analytics dashboard, working
+closely with our data science team. We use Python, PostgreSQL, and Kubernetes.
+
+Requirements:
+- 5+ years of backend development experience
+- Strong Python skills (FastAPI or Django)
+- Experience with PostgreSQL and database design
+- Familiarity with Docker and Kubernetes
+- Bachelor's degree in Computer Science or equivalent experience
+
+Nice to have:
+- Experience with Kafka or other streaming systems
+- Prior startup experience
+
+Compensation: $140,000 - $175,000 per year, plus equity and benefits.
+
+Acme Analytics is an equal opportunity employer.
